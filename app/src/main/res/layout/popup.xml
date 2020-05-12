@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_back"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter des Information"
+        android:textSize="25dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"></TextView>
+
+    <EditText
+        android:id="@+id/info1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Info 1"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="35dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/info2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Info 2"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/info1"
+        android:layout_marginTop="35dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/info3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Info 3"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/info2"
+        android:layout_marginTop="35dp"
+        ></EditText>
+    <EditText
+        android:id="@+id/info4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Info 4"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/info3"
+        android:layout_marginTop="35dp"
+        ></EditText>
+    <Button
+        android:id="@+id/conf"
+        android:layout_below="@id/info4"
+        android:layout_marginTop="35dp"
+        android:text="Confirmer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cornerbutton2"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:textColor="#003366">
+    </Button>
+
+</RelativeLayout>

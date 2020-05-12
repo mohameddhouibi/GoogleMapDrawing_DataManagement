@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="663dp"
+        android:layout_marginBottom="0dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:background="@drawable/back_lin"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/btndraw"
+            android:text="Polygon"
+            android:background="@drawable/cornerbutton2"
+
+            ></Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/drawLine"
+            android:background="@drawable/cornerbutton2"
+
+            android:text="Line"></Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/drawPoint"
+            android:background="@drawable/cornerbutton2"
+
+            android:text="Point"></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/btnclear"
+            android:background="@drawable/cornerbutton2"
+
+            android:text="Clear"></Button>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
